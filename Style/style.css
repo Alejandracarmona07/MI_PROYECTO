@@ -1,0 +1,144 @@
+:root {
+  --color-fondo: #fffaf6;
+  --color-acento: #d6336c;
+  --color-secundario: #ffe4e1;
+  --color-texto: #070103;
+
+  --fuente-principal: 'Playfair Display', serif;
+  --fuente-secundaria: 'Roboto', sans-serif;
+
+  --padding-general-vertical: 1rem;
+  --padding-general-horizontal: 2rem;
+
+  --max-width: 1200px;
+  --gap-principal: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+
+  font-family: var(--fuente-secundaria);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--padding-general-vertical) var(--padding-general-horizontal);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-principal);
+}
+
+
+header {
+  background: #ffd1e5; 
+  padding: var(--padding-general-vertical) var(--padding-general-horizontal);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-secundario);
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #34495e;
+  margin: 1.5rem 0 0.75rem;
+  position: relative;
+  padding-left: 0.5rem;
+  border-left: 4px solid #3498db;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.banner {
+  background-image: url('maquillaje.jpg');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+
+.hero {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-secundario),
+    var(--color-fondo)
+  );
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.img_pestanina {
+  height: 200px;
+  width: 200px;
+}
+
+.img_bases {
+  height: 200px;
+  width: 200px;
+}
+
+a,
+button {
+  font-family: var(--fuente-principal);
+  text-decoration: none;
+  background-color: var(--color-acento);
+  color: #fff;
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.contactanos {
+  margin: 5px;
+}
+
+a:hover,
+button:hover {
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+}
+
+
+footer {
+  background: #ffd1e5; 
+  background-color:#fffaf6;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-secundario);
+  font-size: 0.9rem;
+}
