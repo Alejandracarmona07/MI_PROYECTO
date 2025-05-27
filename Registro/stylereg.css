@@ -1,0 +1,91 @@
+body {
+  font-family: 'Montserrat', 'PT-serif';
+  background-color: #9ac6f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.formulario-registro {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario-registro h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.mensaje-login {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.mensaje-login a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.mensaje-login a:hover {
+  text-decoration: underline;
+}
+
+.privacidad {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.privacidad input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+.privacidad a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.privacidad a:hover {
+  text-decoration: underline;
+}

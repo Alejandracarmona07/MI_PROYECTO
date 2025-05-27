@@ -1,0 +1,86 @@
+:root {
+  --color-fondo: #f9f9f9;
+  --color-acento: #000000;
+  --color-secundario: #3abb6b;
+  --color-texto: #333;
+
+  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-texto: 'Roboto', sans-serif;
+
+  --espaciado-vertical: 2rem;
+  --ancho-maximo: 900px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 1rem;
+  background-color:#0f9b3e8a;
+}
+
+.banner-programacion {
+  position: relative;
+  background-image: url('hiena.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main, header {
+  max-width: var(--ancho-maximo);
+  margin: auto;
+  padding: 0 var(--espaciado-vertical);
+}
+
+header {
+  background-color: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: var(--espaciado-vertical);
+}
+
+h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-acento);
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+
+.cursiva {
+  font-style: italic;
+}
+
